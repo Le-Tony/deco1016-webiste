@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale1">
+</head>
+
+    <body style="margin:0;"> 
+        
+        <!-- div for the very top start-->
+        <div id ="top-bar">
+            <div id="logo">
+                <img src="images/heartbeat.png">
+                <h1 class="health"> Health </h1>
+            </div>
+            <a href="#about-header">About Us</a>
+            <button type="submit" name="button1" id= "button1">Join Now</button> 
+        </div>
+
+        <!--div for image slide show start-->
+        <div id ="slideshow">
+
+            <!--black box shadow over the image-->
+            <div class ="black-box"></div>
+
+            <div class="title"> HEALTH</div>
+            <button type="submit" name="button2" id="button2">Join Today</button>
+        
+            <div class ="my-slides">
+                <img src="images/first.jpg" >
+            </div>  
+
+            <div class = "my-slides">
+                <img src="images/second.jpg" >
+            </div>
+
+            <div class ="my-slides">
+                <img src="images/third.jpg" >
+            </div>
+          
+            <!-- next and previous arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+        <!--About header followed by information div tag-->
+        <h2 id ="about-header">About Us</h2>
+        <div id="information">
+            <div class="info1">
+                <img src="images/teamwork.jpg" alt="info1">
+                <h3>Teamwork</h3>
+            </div>
+        
+            <div class="info2">
+                <img src="images/determination.jpg" alt="info2">
+                <h3>Determination</h3>
+            </div>
+
+            <div class ="info3">
+                <img src="images/work.jpg" alt ="info3">
+                <h3>Hard Working</h3>
+            </div>
+
+        </div>
+
+        <!-- div start-->
+        <div id="very-bottom">
+            <!--White box to be put over image-->
+            <div id="whitebox">
+                    <div id="sign-up-header">Sign Up Now</div>
+
+                    <!--Form sign up-->
+                    <form id = "user-input">
+                            <div class = "form-group">
+                                <label for ="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name here">
+                            </div>
+                
+                            <div class= "form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name ="lastName" placeholder="Enter your last name here">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id ="email" name="email" placeholder="Enter your email here">
+                
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="number">Phone Number</label>
+                                <input type="number" id="number" name="number" placeholder="Enter your phone number here">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" name="button3" id= "button3">Join!</button> 
+                            </div>
+                    </form>
+            </div>
+    
+            <img src="images/bottom.jpg">
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

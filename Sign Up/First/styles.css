@@ -1,0 +1,304 @@
+html{
+    font-family: 'Roboto', 'sans-serif'
+}
+
+#whole{
+    display:inline-flex;
+    height:100%;
+}
+
+/*left takes up 40 percent of screen*/
+
+#left{
+    width:40%;
+    position:relative;
+}
+
+/*right takes up 60percent of the screen*/
+#right{
+    width:60%;
+}
+
+
+
+label{
+    font-size:10px;
+    font-weight:bold;
+}
+
+#title{
+    display:flex;
+    width:100%;
+    font-size:20px;
+    justify-content: center;
+    background-color:lightgreen;
+    margin:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#top{
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-bottom:10px;
+}
+
+#top h1{
+    color:black;
+    font-size: 30px;
+    padding-left:60px;
+    padding-top:20px;
+    margin:0px;
+}
+
+
+#page-checker span{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:block;
+}
+
+#first span{
+    background-color: black;
+    margin-left:9px;
+}
+
+#second span{
+    border:0.5px black solid;
+    margin-left:6px;
+}
+
+
+#page-checker{
+    display:flex;
+    padding-top:10px;
+    padding-right:100px;
+}
+
+#page-checker p{
+    margin:5px 0px 0px 0px;
+    font-size:13px;
+    padding-bottom:5px;
+
+}
+
+#first, #second, #third{
+    margin-left:20px;
+    padding-right:15px;
+    padding-top:10px;
+}
+
+#heading-one{
+    font-size:20px;
+    display:block;
+    margin:0px;
+    padding-top:10px;
+    padding-left:60px;
+    padding-bottom:10px;
+    background-color:lightgreen
+}
+
+#personal-form{
+    display:flex;
+    margin-top:30px;
+    margin-left:0px;
+    padding-left:100px;
+}
+
+#personal-form label{
+    font-size:15px;
+    padding-right:50px;
+    display:inline-block;
+    text-align:right;
+    width:120px;
+}
+
+.form-group{
+    padding-bottom:20px;
+}
+
+#personal-form input{
+    width:300px;
+    height:15px;
+    border-radius:30px;
+    padding:15px;
+    border:2px #41a765 solid;
+}
+
+#personal-form select{
+    height:50px;
+    border-radius:30px;
+    width:335px;
+    padding:15px;
+    border:2px #41a765 solid;
+}
+
+#heading-two{
+    font-size:20px;
+    display:block;
+    margin:15px 0px 0px 0px;
+    padding-top:10px;
+    padding-left:60px;
+    padding-bottom:10px;
+    background-color:lightgreen
+}
+
+#contact-form{
+    display:flex;
+    margin-top:30px;
+    margin-left:0px;
+    padding-left:100px;
+    border-bottom:2px #41a765 solid;
+}
+
+#contact-form input{
+    width:300px;
+    height:15px;
+    border-radius:30px;
+    padding:15px;
+    border:2px #41a765 solid;
+}
+
+#contact-form label{
+    font-size:15px;
+    padding-right:50px;
+    display:inline-block;
+    text-align:right;
+    width:120px;
+}
+
+#contact-form select{
+    height:50px;
+    border-radius:30px;
+    width:335px;
+    padding:15px;
+    border:2px #41a765 solid;
+}
+
+#button{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:0px;
+    padding-bottom:20px;
+    padding-right:60px;
+    padding-top:30px;
+}
+
+#home{
+    margin-left:50px;
+}
+
+button{
+    width:100px;
+    border-radius:30px;
+    height:50px;
+    border:0px;
+    background-color:lightgreen;
+}
+
+button:hover{
+    transition:0.3s ease;  
+    transform:scale(1.05);
+}
+
+#image{
+    height:100%;
+    width:100%;
+}
+
+#left #background{
+    width:100%;
+    height:100%;
+    vertical-align:top;
+    object-fit:cover;
+}
+
+#image div{
+    position:fixed;
+    font-size:5.5vw;
+    
+}
+
+#Your{
+    left:2%;
+    top:55%;
+    color:white;
+
+}
+
+#Journey{
+    left:2%;
+    top:65%;
+    color:white;
+}
+
+#Starts{
+    left:2%;
+    top:75%;
+    color:white;
+}
+
+#Now{
+    left:2%;
+    top:85%;
+    color:green;
+}
+
+
+.blackbox{
+    width:40%;
+    height:100%;
+    position:absolute;
+    background-color:black;
+    opacity:0.6;
+}
+
+@media screen and (max-width:769px){
+    #personal-form{
+        padding-left:10px;
+    }
+
+    #personal-form input{
+        width:230px;
+    }
+    #personal-form select{
+        width:260px;
+    }
+
+    #contact-form{
+        padding-left:10px;
+    }
+
+    #contact-form input{
+        width:230px;
+    }
+
+    #contact-form select{
+        width:260px;
+    }
+
+    #page-checker{
+        padding-right:20px;
+        padding-top:20px
+    }
+    #home{
+        margin-left:10px;
+    }
+
+    #button{
+        padding-right:10px;
+    }
+}
+
+@media screen and (max-width:426px){
+    #personal-form input{
+        width:160px;
+    }
+
+    #contact-form input{
+        width:160px;
+    }
+}

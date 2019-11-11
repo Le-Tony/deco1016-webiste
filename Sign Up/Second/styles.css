@@ -1,0 +1,236 @@
+html{
+    font-family: 'Roboto', 'sans-serif';
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+#whole{
+    display:inline-flex;
+    height:100%;
+}
+
+#left{
+    width:40%;
+    position:relative;
+}
+
+#right{
+    width:60%;
+}
+
+label{
+    font-size:10px;
+    font-weight:bold;
+}
+
+#title{
+    display:flex;
+    width:100%;
+    font-size:20px;
+    justify-content: center;
+    background-color:lightgreen;
+    margin:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#top{
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-bottom:10px;
+}
+
+#top h1{
+    color:black;
+    font-size: 30px;
+    padding-left:60px;
+    padding-top:20px;
+    margin:0px;
+}
+
+
+#page-checker span{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:block;
+}
+
+#first span{
+    background-color: white;
+    border:0.5px black solid;
+    margin-left:9px;
+}
+
+#second span{
+    border:0.5px black solid;
+    background-color:black;
+    margin-left:6px;
+}
+
+
+#page-checker{
+    display:flex;
+    padding-top:10px;
+    padding-right:100px;
+}
+
+#page-checker p{
+    margin:5px 0px 0px 0px;
+    font-size:13px;
+    padding-bottom:5px;
+
+}
+
+#first, #second{
+    margin-left:20px;
+    padding-right:15px;
+    padding-top:10px;
+}
+
+#heading-one{
+    font-size:20px;
+    display:block;
+    margin:0px;
+    padding-top:10px;
+    padding-left:60px;
+    padding-bottom:10px;
+    background-color:lightgreen
+}
+
+#login-form{
+    display:flex;
+    margin-top:30px;
+    margin-left:0px;
+    padding-left:100px;
+    border-bottom:2px green solid;
+}
+
+#login-form label{
+    font-size:15px;
+    padding-right:50px;
+    display:inline-block;
+    text-align:right;
+    width:120px;
+}
+
+.form-group{
+    padding-bottom:20px;
+}
+
+#login-form input{
+    width:300px;
+    height:15px;
+    border-radius:30px;
+    padding:15px;
+    border:2px #41a765 solid;
+}
+
+
+
+#button{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:0px;
+    padding-bottom:20px;
+    padding-right:60px;
+    padding-left:30px;
+    padding-top:30px;
+}
+
+button{
+    width:100px;
+    border-radius:30px;
+    height:50px;
+    border:0px;
+    background-color:lightgreen;
+}
+
+
+/*add transition to this hover to make it look nice */
+button:hover{
+    transition:0.3s ease;  
+    transform:scale(1.05);
+}
+
+.blackbox{
+    position:absolute;
+    width:40%;
+    height:100%;
+    background-color:black;
+    opacity:0.6;
+
+}
+
+#image{
+    height:100%;
+    width:100%;
+}
+
+#left img{
+    width:100%;
+    height:100%;
+    vertical-align:top;
+    object-fit:cover;
+}
+
+#image div{
+    position:fixed;
+    font-size:6vw;
+}
+
+#Almost{
+    top:73%;
+    left:2%;
+    color:white;
+}
+
+#There{
+    top:85%;
+    left:2%;
+    color:white;
+}
+
+@media screen and (max-width:769px){
+    #login-form{
+        padding-left:10px;
+    }
+
+    #login-form input{
+        width:230px;
+    }
+
+    #page-checker{
+        padding-right:20px;
+        padding-top:20px;
+    }
+
+    #button{
+        padding-right:20px;
+        padding-left:10px;
+    }
+}
+
+@media screen and (max-width:426px){
+    #login-form input{
+        width:160px;
+    }
+
+    #page-checker{
+        padding-right:0px
+
+    }
+    #page-checker span{
+        width:10px;
+        height:10px;
+    }
+
+    #page-checker p{
+        margin:0px 0px 0px 0px;
+    }
+}

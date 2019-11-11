@@ -1,0 +1,326 @@
+html{
+    font-family: 'Roboto', 'sans-serif'
+}
+
+#top-bar{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color:lightgreen
+}
+
+
+#logo img{
+    width:50px;
+    height:50px;
+}
+.health{
+    color: black;
+}
+
+#logo{
+    display:inline-flex;
+    padding-left:50px;
+    padding-top:15px;
+    margin:0px
+}
+
+#top-bar button{
+    margin-right:100px;
+    margin-top:20px;
+    height:50px;
+    width:150px;
+    border:1px black solid;
+    border-radius:30px;
+    font-size:20px;
+    background-color:lightgreen;
+    font-weight:bold;
+}
+
+#top-bar button:hover{
+    background-color:#41a765;
+}
+
+#top-bar a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    padding-top:35px;
+}
+
+#top-bar a:hover{
+    transform: scale(1.10);
+    transition:0.5 ease;
+}
+
+#slideshow{
+    position:relative;
+    margin:auto;
+}
+
+.black-box{
+    position:absolute;
+    top:0%;
+    width:100%;
+    height:350px;
+    background-color:black;
+    opacity:0.9;
+}
+
+.my-slides img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    vertical-align:top;
+    
+}
+
+.my-slides{
+    display:none;
+    margin:0px;
+    padding:0px;
+}
+
+.title{
+    font-size:5em;
+    position:absolute;
+    width:95%;
+    text-align:center;
+    color:white;
+    top:40px;
+    letter-spacing: 30px;
+    padding-left:10px;
+}
+
+#slideshow button{
+    position:absolute;
+    width:300px;
+    height:70px;
+    top:180px;
+    left:38%;
+    font-size:40px;
+    border-radius:30px;
+    border:0px;
+    background-color:#41a765;
+}
+
+#slideshow button:hover{
+    background-color:white;
+    transition:0.6s ease;
+}
+
+.prev, .next{
+    cursor:pointer;
+    position:absolute;
+    top:40%;
+    width:auto;
+    margin-top: -22px;
+    padding:16px;
+    color:white;
+    font-weight: bold;
+    font-size:18px;
+    transition:0.6s ease; 
+    border-radius:0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color:lightgreen;
+    opacity:0.8
+}
+
+.active, .dot:hover{
+    background-color:#717171;
+}
+
+
+
+#sign-up-header{
+    text-align:center;
+    margin:0px;
+    padding-top:15px;
+    font-size:40px;
+    color:black;
+
+}
+
+#sign-up{
+    display:flex;
+    padding-top:25px;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#717171;
+    color: white;
+}
+
+.form-group{
+    margin: 0px 0px 20px 0px;
+}
+
+#whitebox input{
+    width: 20em;
+    height:15px;
+    border-radius:30px;
+    padding:15px;
+    border:2px black solid;
+}
+
+#user-input{
+    padding-top:20px;
+    padding-left:5px;
+}
+
+#whitebox label{
+    display:inline-block;
+    text-align:right;
+    width:120px;
+    padding-right:20px;
+    font-size:1em;
+}
+
+.form-group button{
+    color:white;
+    background:#41a765;
+    border:none;
+    border-radius:30px;
+    margin-left:140px;
+    margin-top:10px;
+    width:7em;
+    padding:10px;
+    font-size: 20px;
+}
+
+.form-group button:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease;
+}
+
+#about-header{
+    display:flex;
+    width:100%;
+    font-size:50px;
+    margin:0px;
+    color:black;
+    padding-top:20px;
+    padding-bottom: 20px;
+    background-color:lightgreen;
+    justify-content: center;
+}
+
+#information{
+    display:flex;
+    width:100%;
+    height:300px;
+    flex-direction:row;
+    background:lightgreen;
+    justify-content: space-evenly;
+}
+
+#information img{
+    width:220px;
+    height:200px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+h3,p{
+    text-align: center;
+}
+
+#very-bottom{
+    position:relative;
+    height:800px;
+    background-color:lavender
+}
+
+#very-bottom img{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+    vertical-align:top
+}
+
+#very-bottom #whitebox{
+    position:absolute;
+    top:20%;
+    left:32%;
+    width:40%;
+    height:460px;
+    background-color:white;
+    border-radius:5%;
+}
+
+
+@media screen and (max-width:769px){
+   
+    #information img{
+        width:155px;
+        height:125px;
+    }
+
+    #whitebox input{
+        width:153px;
+        height:15px;
+        flex-shrink:0;
+    }
+
+    #sign-up-header{
+        font-size:1.5em;
+    }
+
+    #very-bottom{
+        height:1000px;
+    }
+
+    #very-bottom #whitebox{
+        height:550px;
+    }
+
+    #button3{
+        width:100px;
+        margin-left:50px;
+    }
+
+    #slideshow button{
+        left:20%;
+    }
+
+    #top-bar{
+        justify-content: space-between;
+    }
+
+    #top-bar button{
+        margin-right:30px;
+    }
+    #top-bar #logo{
+        padding-left:20px;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    .title{
+        font-size:3em;
+    }
+    
+    #information img{
+        width:100px;
+        height:50px;
+    }
+
+    #whitebox input{
+        width:100px;
+    }
+
+    #slideshow button{
+        left:14%;
+    }
+}

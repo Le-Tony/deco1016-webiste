@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="margin:0;">
+
+<!--web page split into 2 divs, left and right div-->
+<div id="whole">
+        <!-- start of left webpage div-->
+        <div id="left">
+            <div id="image">
+                <div class="blackbox"></div>
+                <img src="images/left.jpg" id="background">
+                <div id="Your">YOUR</div>
+                <div id="Journey">JOURNEY</div>
+                <div id="Starts">STARTS</div>
+                <div id="Now">NOW.</div>
+            </div>
+            
+        </div>
+
+    <!-- start of right webpage div-->
+    <div id="right">
+    <div id="top">
+        <h1 id="heading">Sign up</h1>
+        
+        <div id="page-checker">
+            <div id="first">
+                <span class ="first-dot"></span>
+                <p class= "first-text">Details</p>
+            </div>
+
+            <div id="second">
+                <span class="second-dot"></span>
+                <p class="second-text">Login</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="heading-one">Personal Details</h1>
+    <!-- first form input-->
+    <div id ="personal-form">
+        <form id="first-user-input">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="secondFirst" name="firstName" placeholder="Enter your first name here">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name here">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <input type="text" onfocus="(this.type='date')" placeholder= "DD/MM/YYYY" class="textbox-n" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="select">Gender</label>
+                <select id="select" name="select" data-form-required>
+                    <option disabled label="Select One" selected value="">Select One</option>
+                    <option label="Male" value="Male">Male</option>
+                    <option label="Female" value="Female">Female</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <h1 id="heading-two">Contact Information</h1>
+    <!-- second form input-->
+    <div id ="contact-form">
+        <form id="second-user-input">
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="text" id="number" name="number" placeholder="Enter your Phone Number here">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your Email here">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="Address" placeholder="Enter your address here">
+            </div>
+
+            <div class="form-group">
+                <label for="suburb">Suburb</label>
+                <input type="text" id="Suburb" name="Suburb" placeholder="Enter your suburb here">
+            </div>
+
+            <div class="form-group">
+                <label for="postcode">Postcode</label>
+                <input type="number" id="number" name="number" placeholder="Enter your postcode here">
+            </div>
+            
+            <div class="form-group">
+                    <label for="select">Country</label>
+                    <select id="select" name="select" data-form-required>
+                        <option disabled label="Select One" selected value="">Select One</option>
+                        <option label="New South Wales" value="NSW">NSW</option>
+                        <option label="Melbourne" value="Melbourne">Melbourne</option>
+                        <option label="Queensland" value="Queensland">QLD</option>
+                        <option label="Northern Terrority" value="Northern Terrority">NT</option>
+                        <option label="Tasmania" value="Tasmania">Tas</option>
+                        <option label="South Australia" value="South Australia">SA</option>
+                        <option label="Western Australia" value="Western Australia">WA</option>
+                    </select>
+                </div>
+        </form>
+    </div>
+    <!-- buttons for navigation-->
+    <div id ="button">
+
+        <button type="submit" name="button" id="home">Home Page</button>
+        <button type="submit" name="button" id="next">Next</button> 
+    </div>
+    </div>
+</div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
