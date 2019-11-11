@@ -15,6 +15,6 @@ next.addEventListener("click", function(){
 });
 
 home.addEventListener("click", function(){
-    location.replace("../../Landing Page/index.html");
+    location.replace("../../index.html");
 });
 
